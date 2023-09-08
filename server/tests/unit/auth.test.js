@@ -9,26 +9,21 @@ describe("createToken",()=>{
             expect(token).toBeTruthy();
         })
     })
+
+
+
+    it("Should throw if any of the properties: id,role,username is missing",()=>{
+        const args = [
+            {role:"member",username:"maria"},
+            {id:1,username:"maria"},
+            {id:1,role:"member"}
     
-    
-    it("should throw an error if property id is missing",()=>{
-        const user = {id:1,role:"member",username:"maria"}
-        auth.createToken(user,(error,_)=>{
-            expect(error).toThrow()
-        })
-    })
-    
-    it("should throw an error if property role is missing",()=>{
-        const user = {id:1,username:"maria"}
-        auth.createToken(user,(error,_)=>{
-            expect(error).toThrow()
-        })
-    })
-    
-    it("should throw an error if property username is missing",()=>{
-        const user = {id:1,role:"member"}
-        auth.createToken(user,(error,_)=>{
-            expect(error).toThrow()
+        ]
+
+        args.forEach((a)=>{
+           auth.createToken(a,(err)=>{
+            expect(err).toThrow()
+           })
         })
     })
 })

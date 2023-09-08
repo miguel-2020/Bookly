@@ -11,11 +11,15 @@ const db = {
 
 export default db;
 
+/**
+ * 
+ * @param {string} tableName the name of the json file
+ * @returns {Promise<string>} contains a list of records.
+ */
 async function loadRecords(tableName){
         const filePath = new URL(
         tableName == "users"?
         './users.json' : "./books.json", import.meta.url);
-
 
     try { 
      return JSON.parse(await fs.readFile(filePath,{ encoding: 'utf8' }))
@@ -32,7 +36,7 @@ async function search(records,query){
                 query.username ? record.username.toLowerCase().indexOf(query.username.toLowerCase().trim()) !== -1 : false
               );
     
-            outcome ? resolve(outcome) : reject(new Error(`${tableName} not found`))
+            outcome ? resolve(outcome) : reject(new Error(`Please the records and the query arguments`))
                
         })
             
@@ -45,14 +49,13 @@ async function update(tableName,query,bookID,resolve){
     try {
         const records = await loadRecords(tableName)
         const user = await search(records,query)
-        console.log(user)
         user.favorites.push(bookID)
         
         await fs.writeFile(filePath,JSON.stringify(records),{ encoding: 'utf8' })
         resolve(["success","record updated"])
         
     } catch (error) {
-        resolve(["error","Unable to update record"])
+        resolve(["error",Error("Unable to update record")])
     }   
   
 }
