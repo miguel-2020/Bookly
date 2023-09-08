@@ -1,0 +1,76 @@
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+    max-width: 940px;
+    margin: 0 auto;
+    line-height: 1;
+  }
+  .login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .login .form-group {
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+  
+  }
+  
+  .login .pos-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
+    z-index: 1;
+  }
+  
+  .login input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    text-align: center;
+    background-color: transparent;
+    z-index: 2;
+    position: relative;
+    font-size: inherit;
+  }
+  
+  .login label {
+    cursor: text;
+    user-select: none;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 0.7rem;
+    
+  }
+  
+  label:focus ~ label,
+  input:focus:placeholder-shown ~ .pos-absolute,
+  input:not(:placeholder-shown) ~  .pos-absolute {
+    transform: translate(-5rem, -2.1rem) scale(0.8);
+    background-color: var(--primary-color, #ffffff);
+    z-index: 2;
+  }
+  
+  button {
+    width: 50%;
+  }
+  
+  .login small{
+    color:#555;
+    display: inline-block;
+    padding: 0.5rem 0 1rem;
+    
+  }
+  
+  .login .error{
+    padding: 0.5rem 0 1rem;
+    color:#c0392b;
+  }
+  

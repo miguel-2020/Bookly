@@ -1,0 +1,41 @@
+[
+  {
+    "id": "a40b5d65-6dab-4213-b857-9d44819123da",
+    "title": "harry potter and the deathly hallows",
+    "author": "J. K. Rowling",
+    "isbn": "OL20057872M",
+    "belongsTo": "6869acee-f8b0-4d70-ba0d-951bb947729a",
+    "starsAndNumberOfVotes": [[4, 1],[3, 1],[5, 1],[5, 1],[5,1]],
+    "pictureUrl": "http://localhost:3000/images/Harry_Potter_by_Reilly_Brown.jpg",
+    "pictureDesc": "a man, a beutiful awl,a girl, and magic wands",
+    "language":"English",
+    "published":2023,
+    "description": "In Harry Potter and the Deathly Hallows, the seventh and final book in the epic tale of Harry Potter, Harry and Lord Voldemort each prepare for their ultimate encounter.Voldemort takes control of the Ministry of Magic, installs Severus Snape as headmaster at Hogwarts, and sends his Death Eaters across the country to wreak havoc and find Harry. Meanwhile, Harry, Ron, and Hermione embark on a desperate quest the length and breadth of Britain, trying to locate and destroy Voldemort’s four remaining Horcruxes, the magical objects in which he has hidden parts of his broken soul. They visit the Burrow, Grimmauld Place,the Ministry, Godric’s Hollow, Malfoy Manor, Diagon Alley, but every time they solve one mystery, three more evolve—and not just about Voldemort, but about Dumbledore, and Harry's own past, and three mysterious objects called the Deathly Hallows. The Hallows are literally things out of a children’s tale, which, if real, promise to make their possessor the “Master of Death;” and they ensnare Harry with their tantalizing claim of invulnerability.It is only after a night-unbearable loss that he is brought back to his true purpose, and the trio returns to Hogwarts for the final breathtaking battle between the forces of good and evil. They fight the Death Eaters alongside members of the Order of the Phoenix, Dumbledore’s Army, the Weasley clan, and the full array of Hogwarts teachers and students.Yet everything turns upon the moment the entire series has been building up to, the same meeting with which our story began: the moment when Harry and Voldemort face each other at last."
+  },
+  {
+    "id": "a40b5d65-6dab-4213-b857-9d44819321da",
+    "title": "Batman and Robin",
+    "author": "peter",
+    "isbn": "OL61029872M",
+    "belongsTo": "6869acee-f8b0-4d70-ba0d-951bb947729a",
+    "starsAndNumberOfVotes": [[1, 1],[2, 1],[3, 1],[4, 1],[5,1]],
+    "pictureUrl": "http://localhost:3000/images/batman.gif",
+    "pictureDesc": "a man, a beutiful awl,a girl, and magic wands",
+    "published":2005,
+    "language":"English",
+    "description": "After losing his son Damian-a.k.a. Robin-Batman has finally found peace with his death. Damian's grandfather Ra's al Ghul, however, has not. In order to resurrect Robin, he's stolen the body and now Batman-Robin's father-will stop at nothing to reclaim him. Even if that means that the Dark Knight must hunt down Ra's al Ghul from Paradise Island to Nanda Parbat. While traversing his way thru some of the most dangerous and exotic locations in the DC Universe Batman meets up with his fellow teammates in the Justice League and even the noble monster Frankenstein! But do they come as friends or foes? And who will win once the forces of Darkseid decide to take an interest in the future of Damian Wayne? "
+  },
+  {
+    "id": "a40b5d65-6dab-4213-b857-9d44819456da",
+    "title": "wonder woman",
+    "author": "celia",
+    "isbn": "OL40027872M",
+    "belongsTo": "a40b5d65-6dab-4213-b857-9d44819869da",
+    "starsAndNumberOfVotes": [[1, 1],[2, 1],[3, 1],[4, 1],[4,1]],
+    "published":2001,
+    "language":"English",
+    "pictureUrl": "http://localhost:3000/images/Wonder-Woman-Reading-Order-Jim-Lee-705x470.jpg",
+    "pictureDesc": "a man, a beutiful awl,a girl, and magic wands",
+    "description": "Before she was Wonder Woman (Gal Gadot), she was Diana, princess of the Amazons, trained to be an unconquerable warrior. Raised on a sheltered island paradise, Diana meets an American pilot (Chris Pine) who tells her about the massive conflict that's raging in the outside world. Convinced that she can stop the threat, Diana leaves her home for the first time. Fighting alongside men in a war to end all wars, she finally discovers her full powers and true destiny."
+  }
+]
